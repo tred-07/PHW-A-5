@@ -1,5 +1,5 @@
-document.getElementById("donationType-1-btn").addEventListener("click", (e) => {
-  e.preventDefault();
+document.getElementById("donationType-1-btn").addEventListener("click", (e1) => {
+  e1.preventDefault();
   let donationType = document.getElementById("donationType-1-donateAmount");
   console.log(typeof parseFloat(donationType.value));
   let donationTypeNumber = parseFloat(donationType.value);
@@ -32,8 +32,8 @@ document.getElementById("donationType-1-btn").addEventListener("click", (e) => {
 
 
 
-document.getElementById("donationType-2-btn").addEventListener("click", (e) => {
-    e.preventDefault();
+document.getElementById("donationType-2-btn").addEventListener("click", (e2) => {
+    e2.preventDefault();
     let donationType = document.getElementById("donationType-2-donateAmount");
     console.log(typeof parseFloat(donationType.value));
     let donationTypeNumber = parseFloat(donationType.value);
@@ -65,8 +65,8 @@ document.getElementById("donationType-2-btn").addEventListener("click", (e) => {
   });
   
 
-  document.getElementById("donationType-3-btn").addEventListener("click", (e) => {
-    e.preventDefault();
+  document.getElementById("donationType-3-btn").addEventListener("click", (e3) => {
+    e3.preventDefault();
     let donationType = document.getElementById("donationType-3-donateAmount");
     console.log(typeof parseFloat(donationType.value));
     let donationTypeNumber = parseFloat(donationType.value);
