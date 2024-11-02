@@ -1,3 +1,6 @@
+let date=new Date()
+console.log(date);
+
 document
   .getElementById("donationType-1-btn")
   .addEventListener("click", (e1) => {
@@ -5,10 +8,15 @@ document
     let donationType = document.getElementById("donationType-1-donateAmount");
     let donationTypeNumber = parseFloat(donationType.value);
     if (donationTypeNumber > 0) {
-      let p = document.createElement("p");
-      p.innerHTML = `<div><p class="font-bold text-black text-[2rem]">${donationTypeNumber} Donation Type 1</p></div>`;
+      let div = document.createElement("div");
+      div.innerHTML = `<div class="border-[1px] border-solid border-[#222] px-[25px] py-[50px] rounded-[20px] w-[100%]">
+      <p class="font-bold text-black text-[1.5rem]">${donationTypeNumber} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+      <p class="font-bold text-black text-[1rem]">Date: ${date}</p>
+      </div>`;
       let parent = document.getElementById("donationHistoryPart");
-      parent.appendChild(p);
+      parent.appendChild(div);
+      div.style.width="80%"
+      div.style.marginBottom="25px"
       let totalDonatedAmount =
         document.getElementById("totalDonatedAmount").innerText;
       let totalDonatedAmountNumber =
@@ -45,10 +53,13 @@ document
     console.log(typeof parseFloat(donationType.value));
     let donationTypeNumber = parseFloat(donationType.value);
     if (donationTypeNumber > 0) {
-      let p = document.createElement("p");
-      p.innerHTML = `<div><p class="font-bold text-black text-[2rem]">${donationTypeNumber} Donation Type 2</p></div>`;
+      let div = document.createElement("div");
+      div.innerHTML = `<div class="border-[1px] border-solid border-[#222] px-[25px] py-[50px] rounded-[20px] w-[100%]"><p class="font-bold text-black text-[1.5rem] w-[80%] text-wrap">${donationTypeNumber} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+      <p class="font-bold text-black text-[1rem]">Date: ${date}</p></div>`;
       let parent = document.getElementById("donationHistoryPart");
-      parent.appendChild(p);
+      parent.appendChild(div);
+      div.style.width="80%"
+      div.style.marginBottom="25px"
       console.log(donationType.value);
       let totalDonatedAmount =
         document.getElementById("totalDonatedAmount").innerText;
@@ -80,10 +91,15 @@ document
     console.log(typeof parseFloat(donationType.value));
     let donationTypeNumber = parseFloat(donationType.value);
     if (donationTypeNumber > 0) {
-      let p = document.createElement("p");
-      p.innerHTML = `<div><p class="font-bold text-black text-[2rem]">${donationTypeNumber} Donation Type 3</p></div>`;
+      let div = document.createElement("div");
+      div.innerHTML = `<div class="border-[1px] border-solid border-[#222] px-[25px] py-[50px] rounded-[20px] w-[100%]">
+      <p class="font-bold text-black text-[1.5rem]">${donationTypeNumber} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+      <p class="font-bold text-black text-[1rem]">Date: ${date}</p>
+      </div>`;
       let parent = document.getElementById("donationHistoryPart");
-      parent.appendChild(p);
+      parent.appendChild(div);
+      div.style.width="80%"
+      div.style.marginBottom="25px"
       console.log(donationType.value);
       let totalDonatedAmount =
         document.getElementById("totalDonatedAmount").innerText;
