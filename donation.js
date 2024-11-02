@@ -25,6 +25,13 @@ document
       ).innerHTML = `<h1 id="donationType-1-totalCollection" class="text-[black] text-[1.5rem] font-bold">${
         donationType_1_totalCollection + donationTypeNumber
       } BDT</h1>`;
+      document.getElementById("donationType-1-donateAmount").innerHTML = `<input
+                    type="number"
+                    name=""
+                    id="donationType-1-donateAmount"
+                    placeholder="${0}" required
+                    class="px-[25px] py-[10px] m-auto w-[80%] border-[2px] border-solid rounded border-[#222] bg-[white]"
+                  /> `;
     } else {
       alert("Please enter greater than O Bdt.");
     }
