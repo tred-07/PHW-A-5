@@ -3,3 +3,7 @@
     text-align: center;
     color: #222;
   }
+
+  img,h1{
+    display: none;
+  }
