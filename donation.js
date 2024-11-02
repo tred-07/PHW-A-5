@@ -37,17 +37,36 @@ document
         donationType_1_totalCollection + donationTypeNumber
       } BDT</h1>`;
       document.getElementById("donationType-1-donateAmount").value = 0;
-      alert(`${donationTypeNumber} donated successfully.`);
+      // alert(`${donationTypeNumber} donated successfully.`);
+      document.getElementById(
+        "modal-box-1-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-check text-[white] font-bold text-[10rem] bg-[#B4F461] rounded-[48%] p-[15px]"></i> ${donationTypeNumber} taka susscessfully donated.
+      </h3>`;
+      console.log(document.getElementById("modal-box-1-h3").innerText);
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
       document.getElementById("donationType-1-donateAmount").value = 0;
       alert("Not enough balance");
-      console.log("Invalid value");
+      document.getElementById(
+        "modal-box-1-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-xmark text-[white] font-bold text-[10rem] bg-[red] rounded-[48%] p-[15px]"></i> Not enough balance.
+      </h3>`;
+      console.log("Not enough balance");
     } else {
       document.getElementById("donationType-1-donateAmount").value = 0;
       alert("Please enter greater than O Bdt.");
+      document.getElementById(
+        "modal-box-1-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-xmark text-[white] font-bold text-[10rem] bg-[red] rounded-[48%] p-[15px]"></i> Please enter greater than ${0} taka.
+      </h3>`;
     }
   });
 
+
+
+// Donation type 2
 document
   .getElementById("donationType-2-btn")
   .addEventListener("click", (e2) => {
@@ -85,14 +104,29 @@ document
       } BDT</h1>`;
       document.getElementById("donationType-2-donateAmount").value = 0;
       alert(`${donationTypeNumber} donated successfully.`);
+      document.getElementById(
+        "modal-box-2-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-check text-[white] font-bold text-[10rem] bg-[#B4F461] rounded-[48%] p-[15px]"></i> ${donationTypeNumber} taka susscessfully donated.
+      </h3>`;
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
       document.getElementById("donationType-2-donateAmount").value = 0;
       alert("Not enough balance");
+      document.getElementById(
+        "modal-box-2-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-xmark text-[white] font-bold text-[10rem] bg-[red] rounded-[48%] p-[15px]"></i> Not enough balance.
+      </h3>`;
       console.log("Invalid value");
     } else {
       document.getElementById("donationType-2-donateAmount").value = 0;
       alert("Please enter greater than O Bdt.");
       console.log("Invalid value");
+      document.getElementById(
+        "modal-box-2-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-xmark text-[white] font-bold text-[10rem] bg-[red] rounded-[48%] p-[15px]"></i> Please enter greater than ${0} taka.
+      </h3>`;
     }
   });
 
@@ -135,13 +169,28 @@ document
       } BDT</h1>`;
       document.getElementById("donationType-3-donateAmount").value = 0;
       alert(`${donationTypeNumber} donated successfully.`);
+      document.getElementById(
+        "modal-box-3-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-check text-[white] font-bold text-[10rem] bg-[#B4F461] rounded-[48%] p-[15px]"></i> ${donationTypeNumber} taka susscessfully donated.
+      </h3>`;
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
       document.getElementById("donationType-3-donateAmount").value = 0;
       alert("Not enough balance");
+      document.getElementById(
+        "modal-box-3-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-xmark text-[white] font-bold text-[10rem] bg-[red] rounded-[48%] p-[15px]"></i> Not enough balance.
+      </h3>`;
       console.log("Invalid value");
     } else {
       document.getElementById("donationType-3-donateAmount").value = 0;
       alert("Please enter greater than O Bdt.");
       console.log("Invalid value");
+      document.getElementById(
+        "modal-box-3-h3"
+      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      <i class="fa-solid fa-xmark text-[white] font-bold text-[10rem] bg-[red] rounded-[48%] p-[15px]"></i> Please enter greater than ${0} taka.
+      </h3>`;
     }
   });
