@@ -9,6 +9,13 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      #donateAmount::placeholder {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #222;
+      }
+    </style>
   </head>
   <body class="bg-white">
     <header class="mx-auto pt-[75px] pb-[75px]">
@@ -62,22 +69,133 @@
           History
         </button>
       </div>
-      <div
-        id="mainDiv"
-        class="py-[75px]"
-      >
+      <div id="mainDiv" class="py-[75px]">
         <div id="donation" class="w-[80%] m-auto">
           <div id="donationTypes" class="w-[100%] m-auto">
-            <div id="donationType-1" class=" w-[100%] m-auto flex justify-between place-items-center">
+            <div
+              id="donationType-1"
+              class="w-[100%] m-auto flex place-items-center gap-[20px] border-[1px] border-solid border-[#222] p-[10px] rounded-[10px]"
+            >
               <div id="donationType-1-img" class="w-[40%]">
                 <img src="./assets/noakhali.png" alt="" class="w-[100%]" />
               </div>
-              <div id="donationType-1-des" class="w-[60%]"> 
-                <h1>Donate for Flood at Noakhali, Bangladesh</h1>
+              <div id="donationType-1-des" class="w-[60%] m-auto">
+                <h1 class="text-center text-[1.5rem] text-[black] font-bold">
+                  Donate for Flood at Noakhali, Bangladesh
+                </h1>
+                <p
+                  class="text-center text-[0.75rem] text-[black] font-bold w-[80%] m-auto"
+                >
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+                <div class="w-[100%] py-[25px] flex justify-center">
+                  <input
+                    type="number"
+                    name=""
+                    id="donateAmount"
+                    placeholder="Write Donation Amount"
+                    class="px-[25px] py-[10px] m-auto w-[80%] border-[2px] border-solid rounded border-[#222] bg-[white]"
+                  />
+                </div>
+                <div class="w-[100%] py-[25px] flex justify-center">
+                  <button
+                    class="px-[20px] py-[10px] text-[2rem] text-[black] font-bold rounded bg-[#B4F461]"
+                  >
+                    Donate Now
+                  </button>
+                </div>
               </div>
             </div>
-            <div id="donationType-2"></div>
-            <div id="donationType-3"></div>
+            <br />
+            <div
+              id="donationType-2"
+              class="w-[100%] m-auto flex place-items-center gap-[20px] border-[1px] border-solid border-[#222] p-[10px] rounded-[10px]"
+            >
+              <div id="donationType-1-img" class="w-[40%]">
+                <img src="./assets/feni.png" alt="" class="w-[100%]" />
+              </div>
+              <div id="donationType-1-des" class="w-[60%] m-auto">
+                <h1 class="text-center text-[1.5rem] text-[black] font-bold">
+                  Donate for Flood Relief in Feni,Bangladesh
+                </h1>
+                <p
+                  class="text-center text-[0.75rem] text-[black] font-bold w-[80%] m-auto"
+                >
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
+                </p>
+                <div class="w-[100%] py-[25px] flex justify-center">
+                  <input
+                    type="number"
+                    name=""
+                    id="donateAmount"
+                    placeholder="Write Donation Amount"
+                    class="px-[25px] py-[10px] m-auto w-[80%] border-[2px] border-solid rounded border-[#222] bg-[white]"
+                  />
+                </div>
+                <div class="w-[100%] py-[25px] flex justify-center">
+                  <button
+                    class="px-[20px] py-[10px] text-[2rem] text-[black] font-bold rounded bg-[#B4F461]"
+                  >
+                    Donate Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              id="donationType-3"
+              class="w-[100%] m-auto flex place-items-center gap-[20px] border-[1px] border-solid border-[#222] p-[10px] rounded-[10px]"
+            >
+              <div id="donationType-1-img" class="w-[40%]">
+                <img src="./assets/quota-protest.png" alt="" class="w-[100%]" />
+              </div>
+              <div id="donationType-1-des" class="w-[60%] m-auto">
+                <h1 class="text-center text-[1.5rem] text-[black] font-bold">
+                  Aid for Injured in the Quota Movement
+                </h1>
+                <p
+                  class="text-center text-[0.75rem] text-[black] font-bold w-[80%] m-auto"
+                >
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you
+                  help ensure that injured individuals receive the care and
+                  support they need during this challenging time. Every donation
+                  plays a vital role in alleviating their suffering and aiding
+                  in their recovery. Please consider making a donation to
+                  support these brave individuals in their time of need.
+                </p>
+                <div class="w-[100%] py-[25px] flex justify-center">
+                  <input
+                    type="number"
+                    name=""
+                    id="donateAmount"
+                    placeholder="Write Donation Amount"
+                    class="px-[25px] py-[10px] m-auto w-[80%] border-[2px] border-solid rounded border-[#222] bg-[white]"
+                  />
+                </div>
+                <div class="w-[100%] py-[25px] flex justify-center">
+                  <button
+                    class="px-[20px] py-[10px] text-[2rem] text-[black] font-bold rounded bg-[#B4F461]"
+                  >
+                    Donate Now
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="history"></div>
