@@ -3,3 +3,9 @@
     text-align: center;
     color: #222;
   }
+
+.btn-border{
+  border: 10px solid #222;
+}
+
+/* border-[1px] border-solid border-[#222] */

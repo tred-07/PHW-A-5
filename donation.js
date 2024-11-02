@@ -37,7 +37,7 @@ document
         donationType_1_totalCollection + donationTypeNumber
       } BDT</h1>`;
       document.getElementById("donationType-1-donateAmount").value = 0;
-      // alert(`${donationTypeNumber} donated successfully.`);
+      alert(`${donationTypeNumber} donated successfully.`);
       document.getElementById(
         "modal-box-1-h3"
       ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
