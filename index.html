@@ -9,10 +9,8 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="style.css">
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
   </head>
   <body class="bg-white">
     <header class="mx-auto pt-[75px] pb-[75px]">
@@ -57,16 +55,18 @@
       <div id="btns" class="flex justify-center gap-[20px] place-items-center">
         <button
           class="px-[20px] py-[10px] text-[2.5rem] text-[black] font-bold rounded bg-[#B4F461]"
+          id="donationFeaturesBtn"
         >
           Donation
         </button>
         <button
           class="px-[20px] py-[10px] text-[2.5rem] text-[black] font-bold rounded"
+          id="historyFeaturesBtn"
         >
           History
         </button>
       </div>
-      <div id="mainDiv" class="py-[75px]">
+      <div id="donationPart" class="py-[75px]">
         <div id="donation" class="w-[80%] m-auto">
           <div id="donationTypes" class="w-[100%] m-auto">
             <div
@@ -113,10 +113,10 @@
               id="donationType-2"
               class="w-[100%] m-auto flex place-items-center gap-[20px] border-[1px] border-solid border-[#222] p-[10px] rounded-[10px]"
             >
-              <div id="donationType-1-img" class="w-[40%]">
+              <div id="donationType-2-img" class="w-[40%]">
                 <img src="./assets/feni.png" alt="" class="w-[100%]" />
               </div>
-              <div id="donationType-1-des" class="w-[60%] m-auto">
+              <div id="donationType-2-des" class="w-[60%] m-auto">
                 <h1 class="text-center text-[1.5rem] text-[black] font-bold">
                   Donate for Flood Relief in Feni,Bangladesh
                 </h1>
@@ -155,10 +155,10 @@
               id="donationType-3"
               class="w-[100%] m-auto flex place-items-center gap-[20px] border-[1px] border-solid border-[#222] p-[10px] rounded-[10px]"
             >
-              <div id="donationType-1-img" class="w-[40%]">
+              <div id="donationType-3-img" class="w-[40%]">
                 <img src="./assets/quota-protest.png" alt="" class="w-[100%]" />
               </div>
-              <div id="donationType-1-des" class="w-[60%] m-auto">
+              <div id="donationType-3-des" class="w-[60%] m-auto">
                 <h1 class="text-center text-[1.5rem] text-[black] font-bold">
                   Aid for Injured in the Quota Movement
                 </h1>
@@ -197,8 +197,25 @@
         </div>
         <div id="history"></div>
       </div>
+      <div id="donationHistoryPart" class="hidden">
+        <ul>
+            <li>Donate-1: 100 Bdt</li>
+            <li>Donate-2: 200 Bdt</li>
+            <li>Donate-3: 300 Bdt</li>
+            <li>Donate-4: 400 Bdt</li>
+            <li>Donate-5: 500 Bdt</li>
+            <li>Donate-6: 600 Bdt</li>
+            <li>Donate-7: 700 Bdt</li>
+            <li>Donate-8: 800 Bdt</li>
+            <li>Donate-9: 900 Bdt</li>
+            <li>Donate-10: 1000 Bdt</li>
+        </ul>
+      </div>
+        
+      </div>
     </main>
     <footer></footer>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./actionFeaturesBtn.js"></script>
   </body>
 </html>
