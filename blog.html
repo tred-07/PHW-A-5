@@ -51,37 +51,74 @@
         </div> -->
   </header>
   <main>
-    <div id="accordionDiv" class="pt-[25px]">
-      <div class="collapse collapse-arrow bg-[white] m-[50px]">
+    <div id="accordionDiv" class="pt-[25px] w-[100%]">
+      <div class="collapse collapse-arrow bg-[white] m-[50px] w-[100%] m-[auto]">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-[black]">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-title text-xl font-medium text-[black] text-wrap">What is the Document Object Model (DOM)?
+        </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="text-wrap text-[black]">The Document Object Model (DOM) is a programming interface for web documents. It
+            represents the structure
+            of a document, typically an HTML or XML file, as a tree of objects. Each node in the tree corresponds to a
+            part of the document, such as elements, attributes, or text.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-[white] m-[50px]">
+      <div class="collapse collapse-arrow bg-[white] m-[50px] w-[100%] m-[auto]">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-[black]">How do you select an element from the DOM?</div>
+        <div class="collapse-title text-xl font-medium text-[black] text-wrap">How do you select an element from the
+          DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+          <ul>
+            <span class="text-wrap text-black">To select an element from the DOM, you can use various JavaScript methods:</span>
+
+            <li class="text-wrap text-[black]">getElementById(id): Selects a single element by its unique ID.</li>
+
+            <li class="text-wrap text-[black]">getElementsByClassName(className): Selects all elements with a specified class name
+              (returns a live
+              HTMLCollection).</li>
+
+            <li class="text-wrap text-[black]">getElementsByTagName(tagName): Selects all elements of a specified tag name (also
+              returns a live
+              HTMLCollection).</li>
+
+            <li class="text-wrap text-[black]">querySelector(selector): Selects the first element that matches a CSS selector,
+              allowing for more complex
+              queries.</li>
+
+            <li class="text-wrap text-[black]">querySelectorAll(selector): Selects all elements that match a CSS selector and returns
+              a static NodeList.</li>
+
+            <li class="text-wrap text-[black]">These methods enable you to easily access and manipulate elements within a web
+              document.</li>
+          </ul>
+          </p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-[white] m-[50px]">
+      <div class="collapse collapse-arrow bg-[white] m-[50px] w-[100%] m-[auto]">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-[black]">What is event delegation in the context of the DOM,
+        <div class="collapse-title text-xl font-medium text-[black] text-wrap">What is event delegation in the context
+          of the DOM,
           and
           why is it useful?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="text-wrap text-[black]">Event delegation is a technique in the context of the Document Object Model (DOM) that
+            involves using a
+            single event listener on a parent element to manage events for multiple child elements. Instead of attaching
+            individual event listeners to each child element, you attach one listener to a common ancestor. When an
+            event occurs on a child element, the event bubbles up to the parent, where it can be handled.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-[white] m-[50px]">
+      <div class="collapse collapse-arrow bg-[white] m-[50px] w-[100%] m-[auto]">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium text-[black]">How do you manipulate an element's attributes and
+        <div class="collapse-title text-xl font-medium text-[black] text-wrap">How do you manipulate an element's
+          attributes and
           styles
           using the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p class="text-wrap text-[black]">Manipulating an element's attributes and styles using the DOM (Document Object Model) can be done using
+            various JavaScript methods and properties. Below are the common approaches for both attributes and styles.
+          </p>
         </div>
       </div>
     </div>
