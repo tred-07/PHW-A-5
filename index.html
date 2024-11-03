@@ -10,8 +10,8 @@
 </head>
 
 <body class="bg-white w-[100%]">
-  <header class="mx-auto pt-[75px] pb-[75px] mb-[50px] bg-[rgba(249, 247, 243, 1)]">
-    <div class="navBar flex justify-center place-items-center">
+  <header class="mx-auto pb-[75px] mb-[50px] bg-[rgba(249, 247, 243, 1)]">
+    <!-- <div class="navBar flex justify-center place-items-center">
       <div id="navOption-1" class="fixed mr-[250px] mr-[75%]">
         <a href="./blog.html" style="text-decoration: none;" target="_blank">
           <button class="px-[20px] py-[10px] bg-[#B4F461] text-[2.5rem] text-[black] font-bold rounded">
@@ -35,10 +35,50 @@
           5500 BDT
         </h1>
       </div>
+    </div> -->
+    <div class="nav-bar flex justify-evenly place-items-center fixed bg-[purple] w-[100%] pt-[25px]">
+      <!-- <div class="navBar flex justify-center place-items-center"> -->
+      <div id="navOption-1" class="">
+        <a href="./blog.html" style="text-decoration: none;" target="_blank">
+          <button class="px-[20px] py-[10px] bg-[#B4F461] text-[2.5rem] text-[black] font-bold rounded">
+            Blog
+          </button>
+        </a>
+      </div>
+      <div id="navOption-2">
+        <div class="flex gap-[10px] place-items-center">
+          <div id="headerLogoDotPNG">
+            <img src="./assets/logo.png" alt="" style="height: 25px; width: 25px" />
+          </div>
+          <div id="headerTitle" class="text-[2.5rem] text-[black] font-bold">
+            <h1>Donate Bangladesh</h1>
+          </div>
+        </div>
+      </div>
+      <div id="navOption-3" class="flex gap-[15px] place-items-center">
+        <img src="./assets/coin.png" alt="" style="width: 25px; height: 25px" />
+        <h1 id="totalDonatedAmount" class="text-[2.5rem] text-[black] font-bold">
+          5500 BDT
+        </h1>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="nav-bar flex justify-center gap-[25px] place-items-center fixed bg-[purple] w-[100%] mt-[105px] pb-[25px]">
+      <!-- <div id="btns" class="flex justify-center gap-[20px] place-items-center"> -->
+      <button class="px-[20px] py-[10px] text-[2.5rem] text-[black] font-bold rounded bg-[#B4F461]"
+        id="donationFeaturesBtn">
+        Donation
+      </button>
+      <button
+        class="px-[20px] py-[10px] text-[2.5rem] text-[black] font-bold rounded border-[1px] border-solid border-[#222]"
+        id="historyFeaturesBtn">
+        History
+      </button>
+      <!-- </div> -->
     </div>
   </header>
   <main>
-    <div id="btns" class="flex justify-center gap-[20px] place-items-center">
+    <!-- <div id="btns" class="flex justify-center gap-[20px] place-items-center">
       <button class="px-[20px] py-[10px] text-[2.5rem] text-[black] font-bold rounded bg-[#B4F461] fixed mr-[250px]"
         id="donationFeaturesBtn">
         Donation
@@ -46,7 +86,7 @@
       <button class="px-[20px] py-[10px] text-[2.5rem] text-[black] font-bold rounded border-[1px] border-solid border-[#222] fixed ml-[250px]" id="historyFeaturesBtn">
         History
       </button>
-    </div>
+    </div> -->
     <div id="donationPart" class="py-[75px]">
       <div id="donation" class="w-[80%] m-auto">
         <div id="donationTypes" class="w-[100%] m-auto">
@@ -209,8 +249,8 @@
       <a href="https://github.com/tred-07/PHW-A-5" target="_blank"><i
           class="fa-brands fa-github text-[black] text-[2rem]"></i></a>
     </div>
-    <a href="./test.html"></a>
-    <a href="./TestHeader.html"></a>
+    <a href="./test.html">Test</a>
+    <a href="./TestHeader.html">TestHeader</a>
   </footer>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./actionFeaturesBtn.js"></script>
