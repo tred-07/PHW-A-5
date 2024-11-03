@@ -38,11 +38,18 @@ document
       } BDT</h1>`;
       document.getElementById("donationType-1-donateAmount").value = 0;
       alert(`${donationTypeNumber} donated successfully.`);
-      document.getElementById(
-        "modal-box-1-h3"
-      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      document.getElementById("modal-box-1-h3").innerHTML = `
+      <h3 style="color: black;text-align: center;" id="modal-box-1-h3">
+                        <span style="color: black;font-weight: bold;text-align: center;font-size:1.5rem;">Congrates!</span>
+                        <br><img src="./assets/coin.png" style="width: 80px;height: 80px;margin: auto;" alt=""> <br>
+                        <span style="font-size:1.25rem">You Have Donated for Humankind.</span><br><span
+                          style="color: black;font-weight: bold;text-align: center;font-size:1.5rem;">Successfully</span>
+                      </h3>
+      `;
+
+      /* `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
       ${donationTypeNumber} taka susscessfully donated.
-      </h3>`;
+      </h3>`;*/
       console.log(document.getElementById("modal-box-1-h3").innerText);
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
       document.getElementById("donationType-1-donateAmount").value = 0;
@@ -63,8 +70,6 @@ document
       </h3>`;
     }
   });
-
-
 
 // Donation type 2
 document
@@ -106,9 +111,15 @@ document
       alert(`${donationTypeNumber} donated successfully.`);
       document.getElementById(
         "modal-box-2-h3"
-      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      ).innerHTML = `<h3 style="color: black;text-align: center;" id="modal-box-1-h3">
+                        <span style="color: black;font-weight: bold;text-align: center;font-size:1.5rem;">Congrates!</span>
+                        <br><img src="./assets/coin.png" style="width: 80px;height: 80px;margin: auto;" alt=""> <br>
+                        <span style="font-size:1.25rem">You Have Donated for Humankind.</span><br><span
+                          style="color: black;font-weight: bold;text-align: center;font-size:1.5rem;">Successfully</span>
+                      </h3>`;
+      /* `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
       <i class="fa-solid fa-check text-[white] font-bold text-[10rem] bg-[#B4F461] rounded-[48%] p-[15px]"></i> ${donationTypeNumber} taka susscessfully donated.
-      </h3>`;
+      </h3>`;*/
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
       document.getElementById("donationType-2-donateAmount").value = 0;
       alert("Not enough balance");
@@ -171,9 +182,15 @@ document
       alert(`${donationTypeNumber} donated successfully.`);
       document.getElementById(
         "modal-box-3-h3"
-      ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
+      ).innerHTML = `<h3 style="color: black;text-align: center;" id="modal-box-1-h3">
+                        <span style="color: black;font-weight: bold;text-align: center;font-size:1.5rem;">Congrates!</span>
+                        <br><img src="./assets/coin.png" style="width: 80px;height: 80px;margin: auto;" alt=""> <br>
+                        <span style="font-size:1.25rem">You Have Donated for Humankind.</span><br><span
+                          style="color: black;font-weight: bold;text-align: center;font-size:1.5rem;">Successfully</span>
+                      </h3>`;
+      /*`<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
       <i class="fa-solid fa-check text-[white] font-bold text-[10rem] bg-[#B4F461] rounded-[48%] p-[15px]"></i> ${donationTypeNumber} taka susscessfully donated.
-      </h3>`;
+      </h3>`;*/
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
       document.getElementById("donationType-3-donateAmount").value = 0;
       alert("Not enough balance");
