@@ -1,3 +1,4 @@
+// donationType-1-btn
 document
   .getElementById("donationType-1-btn")
   .addEventListener("click", (e1) => {
@@ -15,7 +16,7 @@ document
     ) {
       let div = document.createElement("div");
       div.innerHTML = `<div class="border-[1px] border-solid border-[#222] px-[25px] py-[50px] rounded-[20px] w-[100%]">
-      <p class="font-bold text-black text-[1.5rem]">${donationTypeNumber} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+      <p class="font-bold text-black text-[1.5rem]">${donationTypeNumber} Taka is Donated for Flood at Noakhali, Bangladesh</p>
       <p class="font-bold text-black text-[1rem]">Date: ${date}</p>
       </div>`;
       let parent = document.getElementById("donationHistoryPart");
@@ -71,6 +72,7 @@ document
   });
 
 // Donation type 2
+// donationType-2-btn
 document
   .getElementById("donationType-2-btn")
   .addEventListener("click", (e2) => {
@@ -142,6 +144,8 @@ document
     }
   });
 
+
+  // donationType-3-btn
 document
   .getElementById("donationType-3-btn")
   .addEventListener("click", (e3) => {
