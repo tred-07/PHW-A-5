@@ -41,7 +41,7 @@ document
       document.getElementById(
         "modal-box-1-h3"
       ).innerHTML = `<h3 class="text-lg font-bold text-[black] center flex items-center gap-[10px] justify-center" id="modal-box-1-h3">
-      <i class="fa-solid fa-check text-[white] font-bold text-[10rem] bg-[#B4F461] rounded-[48%] p-[15px]"></i> ${donationTypeNumber} taka susscessfully donated.
+      ${donationTypeNumber} taka susscessfully donated.
       </h3>`;
       console.log(document.getElementById("modal-box-1-h3").innerText);
     } else if (totalDonatedAmountNumber < donationTypeNumber) {
